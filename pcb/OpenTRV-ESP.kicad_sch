@@ -6739,12 +6739,6 @@
 		(uuid "05c5f8c3-0955-4df2-973e-f427259d82d6")
 	)
 	(junction
-		(at 198.12 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08c7a051-2283-4eda-969e-f10bfa2eb31f")
-	)
-	(junction
 		(at 210.82 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6863,6 +6857,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5172e8af-1639-46a0-9acb-ac1f25e82562")
+	)
+	(junction
+		(at 199.39 118.11)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "580a3c27-0943-448b-9385-41496a653b1d")
 	)
 	(junction
 		(at 190.5 118.11)
@@ -7111,6 +7111,16 @@
 			(type default)
 		)
 		(uuid "0459c801-cae0-4c1c-b111-6e1884ff0bee")
+	)
+	(wire
+		(pts
+			(xy 46.99 83.82) (xy 46.99 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06098745-8b75-4c4b-8cd5-ee5e90e727e3")
 	)
 	(wire
 		(pts
@@ -7744,6 +7754,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 118.11) (xy 210.82 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40bffdca-1769-4a98-b5ca-103d2b64df77")
+	)
+	(wire
+		(pts
 			(xy 201.93 68.58) (xy 231.14 68.58)
 		)
 		(stroke
@@ -8221,16 +8241,6 @@
 			(type default)
 		)
 		(uuid "65fefbaf-3b28-4fc4-8516-0758fbba21f1")
-	)
-	(wire
-		(pts
-			(xy 198.12 118.11) (xy 210.82 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66261417-8b74-4d8f-90da-a4fac1907726")
 	)
 	(wire
 		(pts
@@ -9044,16 +9054,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 85.09) (xy 46.99 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a532463c-552b-4955-80d4-aad1bc9559c9")
-	)
-	(wire
-		(pts
 			(xy 81.28 38.1) (xy 90.17 38.1)
 		)
 		(stroke
@@ -9354,7 +9354,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 118.11) (xy 198.12 118.11)
+			(xy 190.5 118.11) (xy 199.39 118.11)
 		)
 		(stroke
 			(width 0)
@@ -10187,28 +10187,6 @@
 		)
 		(uuid "013e0a98-186c-4785-962d-7778a290347c")
 	)
-	(label "DC"
-		(at 60.96 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "036cf623-c91f-478a-b34b-42be23a705e7")
-	)
-	(label "BTN1"
-		(at 119.38 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "05298e1d-fb8e-4412-9b73-619f66363f37")
-	)
 	(label "V_SM"
 		(at 248.92 33.02 0)
 		(fields_autoplaced yes)
@@ -10242,7 +10220,18 @@
 		)
 		(uuid "09e09f5c-0e63-4907-abb4-6b3a3409280c")
 	)
-	(label "BTN2"
+	(label "CS"
+		(at 119.38 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f21817d-8d06-4359-a5e6-ce38f1bd445c")
+	)
+	(label "BTN1"
 		(at 119.38 92.71 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10251,40 +10240,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "16bcea93-81f5-48ba-bcd6-9d178bf4614f")
-	)
-	(label "CS"
-		(at 100.33 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "19f3a0e7-c39a-496f-9927-5e867ef027a0")
-	)
-	(label "SEL_9V_VMS"
-		(at 119.38 80.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a7cecd0-bbeb-4284-98c4-81b57cfc20c0")
-	)
-	(label "RST"
-		(at 100.33 140.97 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1bb2742f-18ca-4fdd-a9ac-744c50f8e184")
+		(uuid "19443e17-7a90-4b26-8397-993789b66686")
 	)
 	(label "EN_SM"
 		(at 152.4 121.92 0)
@@ -10308,8 +10264,8 @@
 		)
 		(uuid "273b30a9-f3d2-4434-8923-80ad336fd005")
 	)
-	(label "DIR2"
-		(at 119.38 87.63 0)
+	(label "DIN"
+		(at 119.38 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10317,10 +10273,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "2780b211-b68f-490f-b030-78af9161aa74")
+		(uuid "30649de1-6174-42df-8d3b-03f44108588e")
 	)
-	(label "DIN"
-		(at 100.33 130.81 180)
+	(label "DIR1"
+		(at 60.96 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10328,18 +10284,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "29f5dd2f-979b-4a1f-91ea-44746dc97c13")
-	)
-	(label "DIN"
-		(at 60.96 59.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2ab4d742-7cf6-4858-a962-bd1b1d992db2")
+		(uuid "34c8e4bd-a3a4-4fc8-84ca-da8ddaddae9a")
 	)
 	(label "SDA"
 		(at 21.59 137.16 180)
@@ -10351,17 +10296,6 @@
 			(justify right bottom)
 		)
 		(uuid "3c657c70-1792-48fe-a60d-8440d4f4f4c5")
-	)
-	(label "CLK"
-		(at 60.96 77.47 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "41854625-4210-40db-9af1-f2adea47c54a")
 	)
 	(label "SCL"
 		(at 60.96 101.6 180)
@@ -10407,6 +10341,39 @@
 		)
 		(uuid "4e7a0d79-a8c6-488b-b8d1-476f74136686")
 	)
+	(label "SDA"
+		(at 58.42 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50da32d6-8af3-4b41-a0fc-f107a78a17d7")
+	)
+	(label "SEL_9V_VMS"
+		(at 60.96 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "512d5296-722d-4a2d-8f7e-05fb94a98b86")
+	)
+	(label "SCL"
+		(at 58.42 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53354773-81a7-49b2-a027-c94e289de3b9")
+	)
 	(label "BTN2"
 		(at 73.66 134.62 0)
 		(fields_autoplaced yes)
@@ -10418,16 +10385,16 @@
 		)
 		(uuid "536ab5aa-370e-437b-bcc4-1ebeee3dbde7")
 	)
-	(label "CLK"
-		(at 100.33 133.35 180)
+	(label "BTN2"
+		(at 119.38 95.25 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "56a71ed3-366c-4fe7-bfeb-3bedb87f1cfc")
+		(uuid "55834669-9cd5-4fe0-ba99-364a7587dc6f")
 	)
 	(label "BUSY"
 		(at 100.33 143.51 180)
@@ -10495,28 +10462,6 @@
 		)
 		(uuid "620cc7b8-d649-4ff5-b0a4-ea4330eb8d06")
 	)
-	(label "SCL"
-		(at 55.88 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "638c64cd-c90f-46ad-b0dd-be3160731af1")
-	)
-	(label "SCL"
-		(at 58.42 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6817c2fe-3f29-434e-a367-037d44bcf5de")
-	)
 	(label "SDA"
 		(at 60.96 99.06 180)
 		(fields_autoplaced yes)
@@ -10528,16 +10473,27 @@
 		)
 		(uuid "77a7f78b-ad20-4715-81bf-311d174e2315")
 	)
-	(label "SEL_12V_VMS"
-		(at 119.38 82.55 0)
+	(label "DIN"
+		(at 100.33 130.81 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "7a18f8bf-2708-4092-9b6a-893bdcb283ed")
+		(uuid "7c4f4f06-47fe-4422-9ce2-fd0418e552c9")
+	)
+	(label "CLK"
+		(at 100.33 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7d17f9a3-da90-4b54-b7de-9ecf059cec15")
 	)
 	(label "SCL"
 		(at 21.59 132.08 180)
@@ -10549,6 +10505,39 @@
 			(justify right bottom)
 		)
 		(uuid "8044e200-4b90-41df-941e-d394d105296f")
+	)
+	(label "DIR2"
+		(at 60.96 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "896d38be-1b58-4d00-9533-72014a5d02f2")
+	)
+	(label "DC"
+		(at 100.33 138.43 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8af84509-a132-4b58-b57a-bba28f2560ae")
+	)
+	(label "VIN_LS"
+		(at 46.99 83.82 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8cb5e495-88b0-4388-8e5d-c56bb6b3d789")
 	)
 	(label "BTN1"
 		(at 73.66 129.54 0)
@@ -10583,8 +10572,30 @@
 		)
 		(uuid "995406ca-6dd8-45e6-97b0-c1388e0f03bf")
 	)
-	(label "DC"
-		(at 100.33 138.43 180)
+	(label "SCL"
+		(at 55.88 80.01 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e43b42b-5555-4d8b-9c0b-70a088bc37fd")
+	)
+	(label "CLK"
+		(at 119.38 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a0983ee5-e920-413c-8b22-756251dd003a")
+	)
+	(label "CS"
+		(at 100.33 135.89 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10592,7 +10603,18 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a8e14f17-3a90-4ba1-8fcf-c53340f1ce25")
+		(uuid "a40030d7-7a27-4843-820c-6c5eefcb112a")
+	)
+	(label "DC"
+		(at 119.38 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad6676fd-8f03-4c68-877f-bce0233d7244")
 	)
 	(label "TXD"
 		(at 124.46 54.61 180)
@@ -10605,19 +10627,8 @@
 		)
 		(uuid "b643c911-99d4-4540-8b70-d30ed4bb9a20")
 	)
-	(label "VIN_5V"
-		(at 46.99 85.09 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be5bd7c6-7034-4cc7-9e44-331b067a31c2")
-	)
-	(label "CS"
-		(at 60.96 74.93 180)
+	(label "SEL_12V_VMS"
+		(at 60.96 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10625,7 +10636,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "be65ea16-f763-461f-978c-cd0d61437798")
+		(uuid "c37ab9fd-4735-4d33-b1bc-7a9fa4b9efb4")
 	)
 	(label "USB_D-"
 		(at 157.48 60.96 180)
@@ -10638,16 +10649,16 @@
 		)
 		(uuid "c410b5fc-17e6-465b-bb9b-cd29fb018515")
 	)
-	(label "SDA"
-		(at 58.42 134.62 0)
+	(label "EN_SM"
+		(at 60.96 59.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "d0363280-3f04-4429-a92d-9e080826a070")
+		(uuid "cf59286d-85a5-40f9-93e9-bf2ae0201ec0")
 	)
 	(label "TXD"
 		(at 60.96 91.44 180)
@@ -10660,16 +10671,16 @@
 		)
 		(uuid "d21905bb-d3de-45ba-9d57-955417d0530f")
 	)
-	(label "EN_SM"
-		(at 119.38 95.25 0)
+	(label "V_BAT_SENSE"
+		(at 60.96 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "d4a7ad31-1158-40a2-adfc-c287eebfb7d9")
+		(uuid "d40b9fb7-fcf7-46ea-9c9d-4030f189f481")
 	)
 	(label "USB_D+"
 		(at 119.38 62.23 0)
@@ -10681,6 +10692,17 @@
 			(justify left bottom)
 		)
 		(uuid "d675c4a8-9a23-4261-828f-378c2857501c")
+	)
+	(label "RST"
+		(at 119.38 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e64915f0-c29a-437b-bf76-8596d05ba563")
 	)
 	(label "DIR1"
 		(at 196.85 68.58 0)
@@ -10694,7 +10716,7 @@
 		(uuid "e6ce98cf-9bac-4367-9598-a0f3232e1e09")
 	)
 	(label "SDA"
-		(at 55.88 80.01 0)
+		(at 55.88 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10702,10 +10724,10 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "eec934c5-bf35-4f29-bdae-44ed3dcca5a6")
+		(uuid "e9864042-5975-4a65-b0ff-d0c37fd19064")
 	)
-	(label "V_BAT_SENSE"
-		(at 60.96 62.23 180)
+	(label "RST"
+		(at 100.33 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10713,7 +10735,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "f211c396-87e7-4e65-bbaa-366668e54c08")
+		(uuid "ed0b24a8-5017-4e58-824f-d97a596ae8b3")
 	)
 	(label "VIN_5V"
 		(at 158.75 74.93 180)
@@ -10725,17 +10747,6 @@
 			(justify right bottom)
 		)
 		(uuid "f972e26b-0396-4f3f-a69e-bbe1778524b3")
-	)
-	(label "DIR1"
-		(at 119.38 85.09 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f97b05a1-a0a4-42d6-95a8-0edd2a175aac")
 	)
 	(label "LED_CTRL"
 		(at 119.38 97.79 0)
@@ -10758,17 +10769,6 @@
 			(justify right bottom)
 		)
 		(uuid "fbe2425f-622b-4b39-8a24-ba100c83f79a")
-	)
-	(label "RST"
-		(at 60.96 64.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "feb005f2-7aff-4256-a942-c615564baaa6")
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -13212,73 +13212,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 198.12 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4e740cbd-1381-442f-a355-5e34a4fca510")
-		(property "Reference" "TP2"
-			(at 200.66 113.5379 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "V_FB"
-			(at 200.66 116.0779 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 203.2 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 198.12 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "130395f4-179a-45ab-a39b-2bde7844063f")
-		)
-		(instances
-			(project ""
-				(path "/33e001e1-9613-42a4-977f-28b03a9aba75"
-					(reference "TP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 248.92 114.3 0)
 		(mirror x)
@@ -13341,6 +13274,73 @@
 			(project "ESP Valve"
 				(path "/33e001e1-9613-42a4-977f-28b03a9aba75"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 199.39 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5ecd5dae-1af7-4253-8ffb-690d96292b2e")
+		(property "Reference" "TP2"
+			(at 201.93 113.5379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "V_SM"
+			(at 201.93 116.0779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 204.47 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 199.39 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8bce229-1471-414b-aad5-941caf1fbe65")
+		)
+		(instances
+			(project "OpenTRV-ESP"
+				(path "/33e001e1-9613-42a4-977f-28b03a9aba75"
+					(reference "TP2")
 					(unit 1)
 				)
 			)
