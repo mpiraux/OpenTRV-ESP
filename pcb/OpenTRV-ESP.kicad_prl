@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 44,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -79,18 +79,6 @@
   },
   "project": {
     "files": [
-      {
-        "name": "OpenTRV-ESP.kicad_sch",
-        "open": false,
-        "window": {
-          "display": 0,
-          "maximized": true,
-          "pos_x": -11,
-          "pos_y": -11,
-          "size_x": 3862,
-          "size_y": 2122
-        }
-      },
       {
         "name": "OpenTRV-ESP.kicad_pcb",
         "open": false,
